@@ -1,4 +1,4 @@
-FROM node:alpine  
+FROM node:alpine builder
 WORKDIR '/app'
 COPY package.json .
 RUN npm install
@@ -7,5 +7,5 @@ RUN npm run build
 
 FROM nginx
 EXPOSE 80
-COPY --from=0 /app/build /usr/share/nginx/html
-#RUN start nginx
+COPY --from=builder /app/build /usr/share/nginx/html
+
