@@ -6,7 +6,7 @@ before_install:
   - docker build -t test -f Dockerfile.dev .
 
 script: 
-  - docker run test npm run test -- --coverage
+  - docker run test npm run -e CI=true test -- --coverage
 
 language: generic
 deploy:
