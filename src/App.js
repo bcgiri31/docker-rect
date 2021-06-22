@@ -9,7 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        learn react Hi there ram!!$ ha ha ha
+        learn react Hi there ram !!$ ha ha ha
         
       </header>
     </div>
