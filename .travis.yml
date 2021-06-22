@@ -8,7 +8,6 @@ before_install:
 script: 
   - docker run test npm run -e CI=true test -- --coverage
 
-language: generic
 deploy:
   provider: elasticbeanstalk
   region: "ap-south-1"
