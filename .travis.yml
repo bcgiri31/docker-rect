@@ -9,6 +9,7 @@ script:
   - docker run -e CI=true test1 npm test -- --coverage
 
 deploy:
+  language: generic
   provider: elasticbeanstalk
   region: "ap-south-1"
   app: "react1"
